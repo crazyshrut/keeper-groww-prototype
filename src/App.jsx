@@ -58,7 +58,7 @@ export default function App() {
   const currentInvestedValue = investedBalance + currentInvestedGain;
   const gainPercentage = hasInvestment ? '3.0' : '0.0';
 
-  const withdrawalCharge = 1; // Small nominal placeholder (Govt STT / stamp)
+  const withdrawalCharge = 2; // Nominal placeholder (Govt STT / tax)
   const netWithdrawalAmount = Math.max(0, currentInvestedValue - withdrawalCharge);
 
   // Reset entire prototype back to brand-new user state (₹0 / ₹0)
